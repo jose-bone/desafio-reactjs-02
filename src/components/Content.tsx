@@ -17,6 +17,7 @@ export function Content() {
         <div className="movies-list">
           {movies.map((movie) => (
             <MovieCard
+              key={movie.imdbID}
               title={movie.Title}
               poster={movie.Poster}
               runtime={movie.Runtime}
